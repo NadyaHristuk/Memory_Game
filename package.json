@@ -1,0 +1,68 @@
+{
+  "name": "memory_game",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.0",
+    "react-scripts": "3.1.1",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "lint:format": "prettier src/**/*.{js,css,json} --write"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{json,css}": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vasia1101/Memory_Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vasia1101/Memory_Game/issues"
+  },
+  "homepage": "https://github.com/Vasia1101/Memory_Game#readme"
+}
